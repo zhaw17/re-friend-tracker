@@ -26,8 +26,15 @@ export class GuiModel {
                             "id":   "group",
                             "type": "autocomplete",
                             "name": "Group",
-                            "wordSearchEnabled": true,
-                            "data": [ "Familiy", "University" ],
+                            "data": [ "Family", "University" ],
+                            "form": "GroupForm",
+                            "width": 2
+                        },
+                        {
+                            "id":   "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "data": [ "Winterthur", "Zürich" ],
                             "form": "GroupForm",
                             "width": 2
                         },
@@ -97,7 +104,6 @@ export class GuiModel {
                 },
                 {
                     "id": "friendspage",
-                    "name": "MainMenu",
                     "elementList": [
                         {
                             "type": "backbutton",
@@ -113,13 +119,39 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "name": "FriendList",
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
                             "data": [ { name: "Anton Amacker" }, { name: "Britta Beavers"} ],
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "gruopspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "New Group",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "data": [ { name: "Family" }, { name: "University"} ],
+                            "form": {
+                                "form": "GroupForm"
                             }
                         },
                     ]
