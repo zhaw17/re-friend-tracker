@@ -130,7 +130,7 @@ export class GuiModel {
                     ]
                 },
                 {
-                    "id": "gruopspage",
+                    "id": "groupspage",
                     "elementList": [
                         {
                             "type": "backbutton",
