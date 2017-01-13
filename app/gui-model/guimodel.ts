@@ -5,9 +5,8 @@ export class GuiModel {
             "title": "Path Example",
             "formList": [
                 {
-                    "id": "PersonForm",
+                    "id": "FriendForm",
                     "title": "Person",
-                    "url": "/person",
                     "formFieldList": [
                         {
                             "id": "familyName",
@@ -24,13 +23,12 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id":   "company",
+                            "id":   "group",
                             "type": "autocomplete",
-                            "name": "Company",
+                            "name": "Group",
                             "wordSearchEnabled": true,
                             "defaultKey": "companyKey",
-                            "form": "CompanyForm",
-                            "url": "/company",
+                            "form": "GroupForm",
                             "width": 2
                         },
                         {
@@ -80,7 +78,7 @@ export class GuiModel {
                             "icon": "fa-tasks",
                             "color": "wisteria",
                             "page": "groupspage",
-                        }
+                        },
                         {
                             "type": "button",
                             "name": "Activities",
@@ -94,6 +92,35 @@ export class GuiModel {
                             "icon": "fa-cubes",
                             "color": "yellow",
                             "page": "locationspage",
+                        },
+                    ]
+                },
+                {
+                    "id": "friendspage",
+                    "name": "MainMenu",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "New Friend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "FriendList",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "data": [ { name: "Anton Amacker" }, { name: "Britta Beavers"} ],
+                            "form": {
+                                "form": "FriendForm"
+                            }
                         },
                     ]
                 }
