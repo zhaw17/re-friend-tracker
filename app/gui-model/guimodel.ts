@@ -27,7 +27,7 @@ export class GuiModel {
                             "type": "autocomplete",
                             "name": "Group",
                             "wordSearchEnabled": true,
-                            "defaultKey": "companyKey",
+                            "data": [ "Familiy", "University" ],
                             "form": "GroupForm",
                             "width": 2
                         },
