@@ -37,7 +37,6 @@
   "dependencies": {
     "body-parser": "1.15.2",
     "express": "4.15.0",
-    "leveldown": "^2.0.0",
     "path-framework": "0.2.7",
     "pouchdb-core": "6.3.4",
     "pouchdb-adapter-memory": "6.3.4"
