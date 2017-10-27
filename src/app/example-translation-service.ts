@@ -23,7 +23,11 @@ export class ExampleTranslationService extends TranslationService {
             "Activities" : "Activities",
             "Birthday" : "Birthday",
             "Comments" : "Comments",
+            "CreationDate" : "Creation Date",
+            "Date" : "Date",
+            "EditActivity" : "Edit Activity",
             "EditFriend" : "Edit Friend",
+            "EditLocation" : "Edit Location",
             "Friends" : "Friends",
             "Friend" : "Friend",
             "FamilyName" : "Family Name",
@@ -33,11 +37,12 @@ export class ExampleTranslationService extends TranslationService {
             "GroupName" : "Group Name",
             "Location" : "Location",
             "LocationName" : "Location Name",
+            "Name" : "Name",
+            "NewActivity" : "New Activity",
             "NewFriend" : "New Friend",
             "NewGroup" : "New Group",
             "NewLocation" : "New Location",
             "Nickname" : "Nickname"
         }
     }
-
 }
