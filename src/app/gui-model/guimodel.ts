@@ -1,5 +1,12 @@
 export class GuiModel {
 
+    /* HINWEIS: Texte sind in der Datei ../example-translation-service.ts definiert.
+    Erscheinen Texte in {}, so kann die Übersetzung in example-translation-service.ts definiert werden
+
+    Key: Bei Listen-Daten kann ein Key mitgegeben werden. Wird kein Key mitgegeben, dann werden nach Klick
+    des Zurück-Buttons die Elemente nicht mehr korrekt dargestellt.
+    */
+
     private _guiModel = {
         "application": {
             "title": "Requirements Engineering Friend Tracker",
